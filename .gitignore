@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual Environment
+venv/
+env/
+
+# Environment Variables (SECRET)
+.env
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Postman (optional cleanup)
+.postman/
+postman/
+
+# Build files
+dist/
+build/
+
+# Ignore the local ChromaDB database directory
+Add-Content -Path ..\.gitignore -Value "`nchroma_db/"
+
+# Ignore the local Chainlit configuration directories
+<<<<<<< HEAD
+Add-Content -Path .gitignore -Value "`n.chainlit/`nday9/.chainlit/"
+=======
+Add-Content -Path .gitignore -Value "`n.chainlit/`nday9/.chainlit/"
+
+.pytest_cache/
+.streamlit/
+"@ | Out-File -Encoding utf8 .gitignore
+>>>>>>> ba482e5 (feat: complete LegalBot multi-tenant legal assistant implementation)
+
+.env
+**/.env
